@@ -19,8 +19,8 @@ class InputTimeViewModelImpl: InputTimeViewModel {
     private var timeUseCase: TimeUseCase = TimeUseCaseImpl()
     
     func saveTime(startTime: Int, endTime: Int, targetTime: Int) throws {
-        let isContains = containsTime(startTime: startTime, endTime: endTime, taretTime: targetTime)
-        let timeInfoRecord = TimeInfoRecord(startTime: startTime, endTime: endTime, targetTime: targetTime, containsTime: isContains)
+        let contains = containsTime(startTime: startTime, endTime: endTime, taretTime: targetTime)
+        let timeInfoRecord = TimeInfoRecord(startTime: startTime, endTime: endTime, targetTime: targetTime, containsTime: contains)
         try timeUseCase.saveTime(timeInfo: timeInfoRecord)
     }
     

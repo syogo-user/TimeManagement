@@ -18,7 +18,15 @@ class TimeUseCaseImpl: TimeUseCase {
     private var repository: TimeRepository = TimeRepositoryImpl()
     
     func containsTime(startTime: Int, endTime: Int, targetTime: Int) -> Bool {
-       return true // あとで修正する
+        if startTime == endTime && startTime == targetTime {
+            return true
+        } else if startTime < endTime {
+            return targetTime >= startTime && targetTime < endTime
+        } else if startTime > endTime {
+            return targetTime >= startTime || targetTime < endTime
+        } else {
+            return false
+        }
     }
     
     func saveTime(timeInfo: TimeInfoRecord) throws {
