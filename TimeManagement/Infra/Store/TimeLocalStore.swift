@@ -9,12 +9,20 @@ import Foundation
 
 protocol TimeLocalStore {
     /// 時間情報を保存
-    func saveLocalTime()
+    func saveLocalTime(timeInfo: TimeInfoRecord) throws
+    
+    /// 時間情報を取得
+    func loadTimeInfo() throws -> [TimeInfoRecord]
 }
 
 class TimeLocalStoreImpl: TimeLocalStore {
+    private let accessor: DBAccessor = GRDBAccessor()
     
-    func saveLocalTime() {
-        
+    func saveLocalTime(timeInfo: TimeInfoRecord) throws {
+        try accessor.timeInfoDao.saveLocalTime(timeInfo: timeInfo)
+    }
+    
+    func loadTimeInfo() -> [TimeInfoRecord] {
+        accessor.timeInfoDao.loadTimeInfo()
     }
 }

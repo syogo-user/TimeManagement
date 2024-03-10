@@ -13,7 +13,7 @@ class TimeInfoRecord : Record {
         "time_info"
     }
     /// 時刻ID
-    let timeId: Int
+//    let timeId: Int
     /// 開始時刻
     let startTime: Int
     /// 終了時刻
@@ -42,8 +42,8 @@ class TimeInfoRecord : Record {
         static let containsTime = Column("contains_time")
     }
 
-    init(timeId: Int, startTime: Int, endTime: Int, targetTime: Int, containsTime: Bool) {
-        self.timeId = timeId
+    init(startTime: Int, endTime: Int, targetTime: Int, containsTime: Bool) {
+//        self.timeId = timeId
         self.startTime = startTime
         self.endTime = endTime
         self.targetTime = targetTime
@@ -52,7 +52,7 @@ class TimeInfoRecord : Record {
     }
 
     required init(row: Row) {
-        self.timeId = row["time_id"]
+//        self.timeId = row["time_id"]
         self.startTime = row["start_time"]
         self.endTime = row["end_time"]
         self.targetTime = row["target_time"]
@@ -61,7 +61,7 @@ class TimeInfoRecord : Record {
     }
 
     override func encode(to container: inout PersistenceContainer) {
-        container["time_id"] = self.timeId
+//        container["time_id"] = self.timeId
         container["start_time"] = self.startTime
         container["end_time"] = self.endTime
         container["target_time"] = self.targetTime

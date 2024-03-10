@@ -9,11 +9,20 @@ import Foundation
 
 protocol TimeInfoDao {
     /// 時間情報を保存
-    func saveLocalTime() -> [TimeInfoRecord]
+    func saveLocalTime(timeInfo: TimeInfoRecord) throws
+    
+    /// 時間情報を取得
+    func loadTimeInfo() -> [TimeInfoRecord]
 }
 
 class TimeInfoDaoImpl: GRDBAccessor, TimeInfoDao {
-    func saveLocalTime() -> [TimeInfoRecord] {
+    func saveLocalTime(timeInfo: TimeInfoRecord) throws {
+        try writeToDBwith { db in
+            try timeInfo.insert(db)
+        }
+    }
+    
+    func loadTimeInfo() -> [TimeInfoRecord] {
         try! readFromDBwith { db in
             try TimeInfoRecord.fetchAll(db)
         }
