@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3D04EFA82B9D9A21007FCCE8 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D04EFA72B9D9A21007FCCE8 /* DomainError.swift */; };
+		3D9E8CCC2B9DEEBC0051754D /* TimeInfoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E8CCB2B9DEEBC0051754D /* TimeInfoItem.swift */; };
+		3D9E8CD12B9DF54E0051754D /* TimeInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E8CCF2B9DF54E0051754D /* TimeInfoTableViewCell.swift */; };
+		3D9E8CD22B9DF54E0051754D /* TimeInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9E8CD02B9DF54E0051754D /* TimeInfoTableViewCell.xib */; };
 		3DA8B05A2B9D87EC002DCA3A /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 3DA8B0592B9D87EC002DCA3A /* GRDB */; };
 		3DA8B05C2B9D88E8002DCA3A /* MainDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA8B05B2B9D88E8002DCA3A /* MainDatabase.swift */; };
 		3DA8B05F2B9D8A2F002DCA3A /* DatabaseQueueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA8B05E2B9D8A2F002DCA3A /* DatabaseQueueFactory.swift */; };
@@ -22,7 +25,7 @@
 		3DF81CCE2B9C4BF700C722C5 /* InputTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CCD2B9C4BF700C722C5 /* InputTimeViewModel.swift */; };
 		3DF81CD02B9C4D2600C722C5 /* TimeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CCF2B9C4D2600C722C5 /* TimeListViewController.swift */; };
 		3DF81CD22B9C4D3600C722C5 /* TimeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CD12B9C4D3600C722C5 /* TimeListViewModel.swift */; };
-		3DF81CD42B9CC15100C722C5 /* TimeUseCase  .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CD32B9CC15100C722C5 /* TimeUseCase  .swift */; };
+		3DF81CD42B9CC15100C722C5 /* TimeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CD32B9CC15100C722C5 /* TimeUseCase.swift */; };
 		3DF81CD82B9CC42800C722C5 /* TimeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CD72B9CC42800C722C5 /* TimeRepository.swift */; };
 		3DF81CDC2B9CC47E00C722C5 /* TimeLocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CDB2B9CC47E00C722C5 /* TimeLocalStore.swift */; };
 		3DF81CDF2B9CCCFA00C722C5 /* TimeInfoDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CDE2B9CCCFA00C722C5 /* TimeInfoDao.swift */; };
@@ -32,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		3D04EFA72B9D9A21007FCCE8 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		3D9E8CCB2B9DEEBC0051754D /* TimeInfoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInfoItem.swift; sourceTree = "<group>"; };
+		3D9E8CCF2B9DF54E0051754D /* TimeInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInfoTableViewCell.swift; sourceTree = "<group>"; };
+		3D9E8CD02B9DF54E0051754D /* TimeInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeInfoTableViewCell.xib; sourceTree = "<group>"; };
 		3DA8B05B2B9D88E8002DCA3A /* MainDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDatabase.swift; sourceTree = "<group>"; };
 		3DA8B05E2B9D8A2F002DCA3A /* DatabaseQueueFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseQueueFactory.swift; sourceTree = "<group>"; };
 		3DA8B0602B9D8FF7002DCA3A /* DatabaseDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseDefinition.swift; sourceTree = "<group>"; };
@@ -47,7 +53,7 @@
 		3DF81CCD2B9C4BF700C722C5 /* InputTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTimeViewModel.swift; sourceTree = "<group>"; };
 		3DF81CCF2B9C4D2600C722C5 /* TimeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeListViewController.swift; sourceTree = "<group>"; };
 		3DF81CD12B9C4D3600C722C5 /* TimeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeListViewModel.swift; sourceTree = "<group>"; };
-		3DF81CD32B9CC15100C722C5 /* TimeUseCase  .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeUseCase  .swift"; sourceTree = "<group>"; };
+		3DF81CD32B9CC15100C722C5 /* TimeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUseCase.swift; sourceTree = "<group>"; };
 		3DF81CD72B9CC42800C722C5 /* TimeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRepository.swift; sourceTree = "<group>"; };
 		3DF81CDB2B9CC47E00C722C5 /* TimeLocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLocalStore.swift; sourceTree = "<group>"; };
 		3DF81CDE2B9CCCFA00C722C5 /* TimeInfoDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInfoDao.swift; sourceTree = "<group>"; };
@@ -131,6 +137,9 @@
 				3DF81CD12B9C4D3600C722C5 /* TimeListViewModel.swift */,
 				3DF81CBA2B9C48BE00C722C5 /* InputTimeViewController.swift */,
 				3DF81CCD2B9C4BF700C722C5 /* InputTimeViewModel.swift */,
+				3D9E8CCF2B9DF54E0051754D /* TimeInfoTableViewCell.swift */,
+				3D9E8CD02B9DF54E0051754D /* TimeInfoTableViewCell.xib */,
+				3D9E8CCB2B9DEEBC0051754D /* TimeInfoItem.swift */,
 				3DF81CBC2B9C48BE00C722C5 /* Main.storyboard */,
 			);
 			path = Presentation;
@@ -150,7 +159,7 @@
 		3DF81CD52B9CC15500C722C5 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
-				3DF81CD32B9CC15100C722C5 /* TimeUseCase  .swift */,
+				3DF81CD32B9CC15100C722C5 /* TimeUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -263,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9E8CD22B9DF54E0051754D /* TimeInfoTableViewCell.xib in Resources */,
 				3DF81CC32B9C48BF00C722C5 /* LaunchScreen.storyboard in Resources */,
 				3DF81CC02B9C48BF00C722C5 /* Assets.xcassets in Resources */,
 				3DF81CBE2B9C48BE00C722C5 /* Main.storyboard in Resources */,
@@ -279,8 +289,9 @@
 				3DF81CD02B9C4D2600C722C5 /* TimeListViewController.swift in Sources */,
 				3DA8B05F2B9D8A2F002DCA3A /* DatabaseQueueFactory.swift in Sources */,
 				3DF81CBB2B9C48BE00C722C5 /* InputTimeViewController.swift in Sources */,
-				3DF81CD42B9CC15100C722C5 /* TimeUseCase  .swift in Sources */,
+				3DF81CD42B9CC15100C722C5 /* TimeUseCase.swift in Sources */,
 				3DF81CB72B9C48BE00C722C5 /* AppDelegate.swift in Sources */,
+				3D9E8CD12B9DF54E0051754D /* TimeInfoTableViewCell.swift in Sources */,
 				3DF81CCE2B9C4BF700C722C5 /* InputTimeViewModel.swift in Sources */,
 				3DF81CE52B9CCF7F00C722C5 /* TimeInfoRecord.swift in Sources */,
 				3DF81CB92B9C48BE00C722C5 /* SceneDelegate.swift in Sources */,
@@ -291,6 +302,7 @@
 				3DF81CD22B9C4D3600C722C5 /* TimeListViewModel.swift in Sources */,
 				3DA8B0632B9D900E002DCA3A /* DatabaseError.swift in Sources */,
 				3DF81CDF2B9CCCFA00C722C5 /* TimeInfoDao.swift in Sources */,
+				3D9E8CCC2B9DEEBC0051754D /* TimeInfoItem.swift in Sources */,
 				3D04EFA82B9D9A21007FCCE8 /* DomainError.swift in Sources */,
 				3DA8B05C2B9D88E8002DCA3A /* MainDatabase.swift in Sources */,
 			);
