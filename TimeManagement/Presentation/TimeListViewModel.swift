@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+protocol TimeListViewModel {
+    // 一覧を取得する
+    func loadTimeList() throws -> [TimeInfoItem]
+}
+
+
+class TimeListViewModelImpl: TimeListViewModel {
+    private var timeUseCase: TimeUseCase = TimeUseCaseImpl()
+    
+    func loadTimeList() throws -> [TimeInfoItem] {
+        let items = try timeUseCase.loadTimeInfo()
+        return items
+    }
+}
