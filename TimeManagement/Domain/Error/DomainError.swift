@@ -10,6 +10,7 @@ import Foundation
 enum DomainError: Error {
     /// ローカルDBに関するエラー
     case localDbError
+
     /// その他のエラー
     case unKnownError
 }

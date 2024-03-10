@@ -21,27 +21,36 @@ class InputTimeViewController: UIViewController {
     }
 
     @IBAction func judgement(_ sender: Any) {
-        
+        // あとでバリデーションする
+        guard let timeValue = validation() else { return }
+        let contains = viewModel.containsTime(startTime: timeValue.0, endTime: timeValue.1, taretTime: timeValue.2)
+        self.includeStateLabel.text = contains ? "含む" : "含まない"
     }
     
     @IBAction func save(_ sender: Any) {
         // あとでバリデーションする
-        guard let startTime = startTimeTextField.text,
-              let endTime = endTimeTextField.text,
-              let targetTime = targetTimeTextField.text
-        else { return }
-        
-        guard let startTime = Int(startTime),
-              let endTime = Int(endTime),
-              let targetTime = Int(targetTime)
-        else { return }
+        guard let timeValue = validation() else { return }
         
         do {
-            try viewModel.saveTime(startTime: startTime, endTime: endTime, targetTime: targetTime)
+            try viewModel.saveTime(startTime: timeValue.0, endTime: timeValue.1, targetTime: timeValue.2)
             // 画面を閉じる
         } catch {
             // あとでエラーを表示する
         }
+    }
+    
+    private func validation() -> (Int, Int, Int)? {
+        guard let startTime = startTimeTextField.text,
+              let endTime = endTimeTextField.text,
+              let targetTime = targetTimeTextField.text
+        else { return nil }
+        
+        guard let startTime = Int(startTime),
+              let endTime = Int(endTime),
+              let targetTime = Int(targetTime)
+        else { return nil }
+        
+        return (startTime, endTime, targetTime)
     }
 }
 
