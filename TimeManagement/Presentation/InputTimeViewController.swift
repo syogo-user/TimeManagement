@@ -24,7 +24,7 @@ class InputTimeViewController: UIViewController {
         // あとでバリデーションする
         guard let timeValue = validation() else { return }
         let contains = viewModel.containsTime(startTime: timeValue.0, endTime: timeValue.1, taretTime: timeValue.2)
-        self.includeStateLabel.text = contains ? "含む" : "含まない"
+        self.includeStateLabel.text = contains ? R.string.localizable.includeStateContain() : R.string.localizable.includeStateNotContain()
     }
     
     @IBAction func save(_ sender: Any) {
