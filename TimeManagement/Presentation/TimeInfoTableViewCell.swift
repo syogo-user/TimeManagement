@@ -19,9 +19,9 @@ class TimeInfoTableViewCell: UITableViewCell {
     }
     
     func setLayout(timeInfo: TimeInfoItem){
-        self.startTimeLabel.text = "開始時刻:" + timeInfo.startTime.description
-        self.endTimeLabel.text = "終了時刻:" + timeInfo.endTime.description
-        self.targetTimeLabel.text = "対象の時刻:" + timeInfo.targetTime.description
-        self.containsLabel.text =  timeInfo.containsTime ? "含む" : "含まない"
+        self.startTimeLabel.text = R.string.localizable.startTime() + timeInfo.startTime.description
+        self.endTimeLabel.text = R.string.localizable.endTime() + timeInfo.endTime.description
+        self.targetTimeLabel.text = R.string.localizable.targetTime() + timeInfo.targetTime.description
+        self.containsLabel.text =  timeInfo.containsTime ? R.string.localizable.includeStateContain() : R.string.localizable.includeStateNotContain()
     }
 }

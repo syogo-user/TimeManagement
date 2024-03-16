@@ -1,0 +1,14 @@
+//
+//  Localizable.strings
+//  TimeManagement
+//
+//  Created by 小野寺祥吾 on 2024/03/16.
+//
+
+"localDbErrorTitle" = "DBエラー";
+
+"includeStateContain" = "含む";
+"includeStateNotContain" = "含まない";
+"startTime" = "開始時刻:";
+"endTime" = "終了時刻:";
+"targetTime" = "対象の時刻:";

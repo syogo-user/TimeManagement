@@ -12,7 +12,7 @@
         <!--Time List View Controller-->
         <scene sceneID="McT-n6-icy">
             <objects>
-                <viewController id="ov4-DN-i22" customClass="TimeListViewController" customModule="TimeManagement" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="timeListVC" id="ov4-DN-i22" customClass="TimeListViewController" customModule="TimeManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e2N-zH-7I4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,7 @@
         <!--Input Time View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="InputTimeViewController" customModule="TimeManagement" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="inputTimeVC" id="BYZ-38-t0r" customClass="InputTimeViewController" customModule="TimeManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
