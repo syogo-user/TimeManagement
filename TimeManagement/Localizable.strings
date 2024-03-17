@@ -20,7 +20,7 @@
 "includeStateNotContain" = "含まない";
 "startTimeText" = "開始時刻: %@時";
 "endTimeText" = "終了時刻: %@時";
-"targetTimeText" = "対象の時刻: %@時";
+"targetTimeText" = "とある時刻: %@時";
 "startTime" = "開始時刻";
 "endTime" = "終了時刻";
 "targetTime" = "とある時刻";
