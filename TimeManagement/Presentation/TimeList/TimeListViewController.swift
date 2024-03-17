@@ -32,7 +32,7 @@ class TimeListViewController: BaseViewController {
     }
     
     @IBAction func registerTimeInfo(_ sender: Any) {
-        guard let vc = R.storyboard.main.inputTimeVC() else { return }
+        guard let vc = R.storyboard.inputTime.inputTimeVC() else { return }
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
     }

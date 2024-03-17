@@ -18,12 +18,13 @@
 		3DA8B05F2B9D8A2F002DCA3A /* DatabaseQueueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA8B05E2B9D8A2F002DCA3A /* DatabaseQueueFactory.swift */; };
 		3DA8B0612B9D8FF7002DCA3A /* DatabaseDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA8B0602B9D8FF7002DCA3A /* DatabaseDefinition.swift */; };
 		3DA8B0632B9D900E002DCA3A /* DatabaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA8B0622B9D900E002DCA3A /* DatabaseError.swift */; };
+		3DBE3FEE2BA6D6B20040E127 /* InputTime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBE3FED2BA6D6B20040E127 /* InputTime.storyboard */; };
 		3DC5AA3B2BA58EC000055884 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DC5AA3A2BA58EC000055884 /* Localizable.strings */; };
 		3DC5AA422BA5A15100055884 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5AA412BA5A15100055884 /* BaseViewController.swift */; };
 		3DF81CB72B9C48BE00C722C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CB62B9C48BE00C722C5 /* AppDelegate.swift */; };
 		3DF81CB92B9C48BE00C722C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CB82B9C48BE00C722C5 /* SceneDelegate.swift */; };
 		3DF81CBB2B9C48BE00C722C5 /* InputTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CBA2B9C48BE00C722C5 /* InputTimeViewController.swift */; };
-		3DF81CBE2B9C48BE00C722C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF81CBC2B9C48BE00C722C5 /* Main.storyboard */; };
+		3DF81CBE2B9C48BE00C722C5 /* TimeList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF81CBC2B9C48BE00C722C5 /* TimeList.storyboard */; };
 		3DF81CC02B9C48BF00C722C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF81CBF2B9C48BF00C722C5 /* Assets.xcassets */; };
 		3DF81CC32B9C48BF00C722C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF81CC12B9C48BF00C722C5 /* LaunchScreen.storyboard */; };
 		3DF81CCE2B9C4BF700C722C5 /* InputTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CCD2B9C4BF700C722C5 /* InputTimeViewModel.swift */; };
@@ -46,13 +47,14 @@
 		3DA8B05E2B9D8A2F002DCA3A /* DatabaseQueueFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseQueueFactory.swift; sourceTree = "<group>"; };
 		3DA8B0602B9D8FF7002DCA3A /* DatabaseDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseDefinition.swift; sourceTree = "<group>"; };
 		3DA8B0622B9D900E002DCA3A /* DatabaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseError.swift; sourceTree = "<group>"; };
+		3DBE3FED2BA6D6B20040E127 /* InputTime.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputTime.storyboard; sourceTree = "<group>"; };
 		3DC5AA3A2BA58EC000055884 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		3DC5AA412BA5A15100055884 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3DF81CB32B9C48BE00C722C5 /* TimeManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF81CB62B9C48BE00C722C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DF81CB82B9C48BE00C722C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3DF81CBA2B9C48BE00C722C5 /* InputTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTimeViewController.swift; sourceTree = "<group>"; };
-		3DF81CBD2B9C48BE00C722C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DF81CBD2B9C48BE00C722C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TimeList.storyboard; sourceTree = "<group>"; };
 		3DF81CBF2B9C48BF00C722C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DF81CC22B9C48BF00C722C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DF81CC42B9C48BF00C722C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +105,36 @@
 				3DA8B0622B9D900E002DCA3A /* DatabaseError.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		3DBE3FF32BA6D9AD0040E127 /* TimeList */ = {
+			isa = PBXGroup;
+			children = (
+				3DBE3FF62BA6D9EB0040E127 /* Cell */,
+				3DF81CBC2B9C48BE00C722C5 /* TimeList.storyboard */,
+				3DF81CCF2B9C4D2600C722C5 /* TimeListViewController.swift */,
+				3DF81CD12B9C4D3600C722C5 /* TimeListViewModel.swift */,
+			);
+			path = TimeList;
+			sourceTree = "<group>";
+		};
+		3DBE3FF52BA6D9CE0040E127 /* InputTime */ = {
+			isa = PBXGroup;
+			children = (
+				3DBE3FED2BA6D6B20040E127 /* InputTime.storyboard */,
+				3DF81CBA2B9C48BE00C722C5 /* InputTimeViewController.swift */,
+				3DF81CCD2B9C4BF700C722C5 /* InputTimeViewModel.swift */,
+			);
+			path = InputTime;
+			sourceTree = "<group>";
+		};
+		3DBE3FF62BA6D9EB0040E127 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3D9E8CCF2B9DF54E0051754D /* TimeInfoTableViewCell.swift */,
+				3D9E8CD02B9DF54E0051754D /* TimeInfoTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		3DC5AA402BA5A13D00055884 /* Utility */ = {
@@ -159,14 +191,9 @@
 		3DF81CCB2B9C48D600C722C5 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				3DF81CCF2B9C4D2600C722C5 /* TimeListViewController.swift */,
-				3DF81CD12B9C4D3600C722C5 /* TimeListViewModel.swift */,
-				3DF81CBA2B9C48BE00C722C5 /* InputTimeViewController.swift */,
-				3DF81CCD2B9C4BF700C722C5 /* InputTimeViewModel.swift */,
-				3D9E8CCF2B9DF54E0051754D /* TimeInfoTableViewCell.swift */,
-				3D9E8CD02B9DF54E0051754D /* TimeInfoTableViewCell.xib */,
+				3DBE3FF32BA6D9AD0040E127 /* TimeList */,
+				3DBE3FF52BA6D9CE0040E127 /* InputTime */,
 				3D9E8CCB2B9DEEBC0051754D /* TimeInfoItem.swift */,
-				3DF81CBC2B9C48BE00C722C5 /* Main.storyboard */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -244,6 +271,7 @@
 				3DF81CAF2B9C48BE00C722C5 /* Sources */,
 				3DF81CB02B9C48BE00C722C5 /* Frameworks */,
 				3DF81CB12B9C48BE00C722C5 /* Resources */,
+				3D512F1C2BA6ABBA008587E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -302,15 +330,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBE3FEE2BA6D6B20040E127 /* InputTime.storyboard in Resources */,
 				3DC5AA3B2BA58EC000055884 /* Localizable.strings in Resources */,
 				3D9E8CD22B9DF54E0051754D /* TimeInfoTableViewCell.xib in Resources */,
 				3DF81CC32B9C48BF00C722C5 /* LaunchScreen.storyboard in Resources */,
 				3DF81CC02B9C48BF00C722C5 /* Assets.xcassets in Resources */,
-				3DF81CBE2B9C48BE00C722C5 /* Main.storyboard in Resources */,
+				3DF81CBE2B9C48BE00C722C5 /* TimeList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D512F1C2BA6ABBA008587E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/generated/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which rswift >/dev/null; then\nrswift generate \"$SRCROOT/generated/R.generated.swift\"\nelse\necho \"warning: rswift not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DF81CAF2B9C48BE00C722C5 /* Sources */ = {
@@ -350,12 +401,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3DF81CBC2B9C48BE00C722C5 /* Main.storyboard */ = {
+		3DF81CBC2B9C48BE00C722C5 /* TimeList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3DF81CBD2B9C48BE00C722C5 /* Base */,
 			);
-			name = Main.storyboard;
+			name = TimeList.storyboard;
 			sourceTree = "<group>";
 		};
 		3DF81CC12B9C48BF00C722C5 /* LaunchScreen.storyboard */ = {
@@ -499,7 +550,8 @@
 				INFOPLIST_FILE = TimeManagement/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TimeList;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -527,7 +579,8 @@
 				INFOPLIST_FILE = TimeManagement/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TimeList;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;

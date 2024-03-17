@@ -29,14 +29,14 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="対象の時刻:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14I-l5-hEc">
-                        <rect key="frame" x="214" y="16" width="92" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="とある時刻:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14I-l5-hEc">
+                        <rect key="frame" x="24" y="75" width="92" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="含む" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lf8-i1-tZU">
-                        <rect key="frame" x="24" y="75" width="35" height="21"/>
+                        <rect key="frame" x="132" y="75" width="35" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -45,13 +45,15 @@
                 <constraints>
                     <constraint firstItem="hxj-2i-r4b" firstAttribute="leading" secondItem="clK-hB-nEu" secondAttribute="trailing" constant="16" id="6u7-By-AKf"/>
                     <constraint firstItem="hxj-2i-r4b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="7ab-DZ-DEc"/>
-                    <constraint firstItem="14I-l5-hEc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="HtZ-yG-doc"/>
-                    <constraint firstItem="Lf8-i1-tZU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="LXT-t0-rlZ"/>
+                    <constraint firstAttribute="bottom" secondItem="14I-l5-hEc" secondAttribute="bottom" constant="16" id="H6R-Qn-U7E"/>
+                    <constraint firstItem="Lf8-i1-tZU" firstAttribute="top" secondItem="14I-l5-hEc" secondAttribute="top" id="Nfj-iZ-bJl"/>
+                    <constraint firstItem="14I-l5-hEc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="P8C-tg-We9"/>
+                    <constraint firstItem="14I-l5-hEc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="clK-hB-nEu" secondAttribute="bottom" constant="24" id="QvV-3J-dhq"/>
                     <constraint firstItem="clK-hB-nEu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="arQ-dZ-Chz"/>
+                    <constraint firstItem="Lf8-i1-tZU" firstAttribute="leading" secondItem="14I-l5-hEc" secondAttribute="trailing" constant="16" id="c8N-52-Gsk"/>
+                    <constraint firstItem="Lf8-i1-tZU" firstAttribute="leading" secondItem="14I-l5-hEc" secondAttribute="trailing" constant="16" id="dPk-zv-qZd"/>
                     <constraint firstItem="clK-hB-nEu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="eX6-NH-8bw"/>
-                    <constraint firstAttribute="bottom" secondItem="Lf8-i1-tZU" secondAttribute="bottom" constant="16" id="iz0-dY-Hxf"/>
-                    <constraint firstItem="14I-l5-hEc" firstAttribute="leading" secondItem="hxj-2i-r4b" secondAttribute="trailing" constant="16" id="wX1-nI-ctD"/>
-                    <constraint firstItem="Lf8-i1-tZU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="clK-hB-nEu" secondAttribute="bottom" constant="24" id="zBa-Km-BMj"/>
+                    <constraint firstAttribute="bottom" secondItem="Lf8-i1-tZU" secondAttribute="bottom" constant="16" id="iBa-j5-FWy"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
