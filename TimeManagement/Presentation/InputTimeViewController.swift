@@ -50,20 +50,21 @@ class InputTimeViewController: BaseViewController {
         let startTime = Int(startTimeText)
         let endTime = Int(endTimeText)
         let targetTime = Int(targetTimeText)
-        let timeItems: [(String, Int?)] = [("開始時刻", startTime), ("終了時刻", endTime), ("とある時刻", targetTime)]
+        let timeItems: [(String, Int?)] = [(R.string.localizable.startTime(), startTime), (R.string.localizable.endTime(), endTime), (R.string.localizable.targetTime(), targetTime)]
         
-        var invalidValue: String = ""
+        var invalidItems: [String] = []
         timeItems.forEach { (key: String, time: Int?) in
             if let time = time {
                 if invalidTime(time: time) {
-                    invalidValue += key
+                    invalidItems.append(key)
                 }
             } else {
-                invalidValue += key
+                invalidItems.append(key)
             }
         }
         
-        if invalidValue != "" {
+        if !invalidItems.isEmpty {
+            let invalidValue = invalidItems.joined(separator: ",")
             showValidationResultDialog(invalidValue: invalidValue)
         }
         

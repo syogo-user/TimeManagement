@@ -8,7 +8,7 @@
 "saveErrorTitle" = "保存失敗";
 "saveErrorMessage" = "保存に失敗しました。\n再度お試しください。";
 "inputErrorTitle" = "入力不正";
-"inputErrorMessage" = "%@の値が不正です。%@の値は0から23で入力してください。";
+"inputErrorMessage" = "%@の値が不正です。\n%@の値は0から23で入力してください。";
 "loadErrorTitle" = "読込失敗";
 "loadErrorMessage" = "データの読み込みに失敗しました。\n一覧をスワイプして更新してください。";
 
@@ -18,6 +18,9 @@
 
 "includeStateContain" = "含む";
 "includeStateNotContain" = "含まない";
-"startTime" = "開始時刻: %@時";
-"endTime" = "終了時刻: %@時";
-"targetTime" = "対象の時刻: %@時";
+"startTimeText" = "開始時刻: %@時";
+"endTimeText" = "終了時刻: %@時";
+"targetTimeText" = "対象の時刻: %@時";
+"startTime" = "開始時刻";
+"endTime" = "終了時刻";
+"targetTime" = "とある時刻";
