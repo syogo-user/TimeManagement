@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D04EFA82B9D9A21007FCCE8 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D04EFA72B9D9A21007FCCE8 /* DomainError.swift */; };
+		3D6CB10B2BA72CD700F26D3F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6CB10A2BA72CD700F26D3F /* R.generated.swift */; };
 		3D9E8CCC2B9DEEBC0051754D /* TimeInfoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E8CCB2B9DEEBC0051754D /* TimeInfoItem.swift */; };
 		3D9E8CD12B9DF54E0051754D /* TimeInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E8CCF2B9DF54E0051754D /* TimeInfoTableViewCell.swift */; };
 		3D9E8CD22B9DF54E0051754D /* TimeInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9E8CD02B9DF54E0051754D /* TimeInfoTableViewCell.xib */; };
@@ -18,7 +19,6 @@
 		3DBE3FEE2BA6D6B20040E127 /* InputTime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBE3FED2BA6D6B20040E127 /* InputTime.storyboard */; };
 		3DC5AA3B2BA58EC000055884 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DC5AA3A2BA58EC000055884 /* Localizable.strings */; };
 		3DC5AA422BA5A15100055884 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5AA412BA5A15100055884 /* BaseViewController.swift */; };
-		3DDC4A912BA729FD009CFF1F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC4A902BA729FD009CFF1F /* R.generated.swift */; };
 		3DF81CB72B9C48BE00C722C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CB62B9C48BE00C722C5 /* AppDelegate.swift */; };
 		3DF81CB92B9C48BE00C722C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CB82B9C48BE00C722C5 /* SceneDelegate.swift */; };
 		3DF81CBB2B9C48BE00C722C5 /* InputTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81CBA2B9C48BE00C722C5 /* InputTimeViewController.swift */; };
@@ -39,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		3D04EFA72B9D9A21007FCCE8 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		3D6CB10A2BA72CD700F26D3F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = TimeManagement/R.generated.swift; sourceTree = SOURCE_ROOT; };
 		3D9E8CCB2B9DEEBC0051754D /* TimeInfoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInfoItem.swift; sourceTree = "<group>"; };
 		3D9E8CCF2B9DF54E0051754D /* TimeInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInfoTableViewCell.swift; sourceTree = "<group>"; };
 		3D9E8CD02B9DF54E0051754D /* TimeInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeInfoTableViewCell.xib; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		3DBE3FED2BA6D6B20040E127 /* InputTime.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputTime.storyboard; sourceTree = "<group>"; };
 		3DC5AA3A2BA58EC000055884 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		3DC5AA412BA5A15100055884 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		3DDC4A902BA729FD009CFF1F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		3DF81CB32B9C48BE00C722C5 /* TimeManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF81CB62B9C48BE00C722C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DF81CB82B9C48BE00C722C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 				3DF81CCA2B9C48CE00C722C5 /* Domain */,
 				3DF81CCC2B9C48E200C722C5 /* Infra */,
 				3DC5AA402BA5A13D00055884 /* Utility */,
-				3DDC4A902BA729FD009CFF1F /* R.generated.swift */,
+				3D6CB10A2BA72CD700F26D3F /* R.generated.swift */,
 				3DF81CB62B9C48BE00C722C5 /* AppDelegate.swift */,
 				3DF81CB82B9C48BE00C722C5 /* SceneDelegate.swift */,
 				3DF81CBF2B9C48BF00C722C5 /* Assets.xcassets */,
@@ -421,7 +421,7 @@
 				3DC5AA422BA5A15100055884 /* BaseViewController.swift in Sources */,
 				3D9E8CD12B9DF54E0051754D /* TimeInfoTableViewCell.swift in Sources */,
 				3DF81CCE2B9C4BF700C722C5 /* InputTimeViewModel.swift in Sources */,
-				3DDC4A912BA729FD009CFF1F /* R.generated.swift in Sources */,
+				3D6CB10B2BA72CD700F26D3F /* R.generated.swift in Sources */,
 				3DF81CE52B9CCF7F00C722C5 /* TimeInfoRecord.swift in Sources */,
 				3DF81CB92B9C48BE00C722C5 /* SceneDelegate.swift in Sources */,
 				3DF81CDC2B9CC47E00C722C5 /* TimeLocalStore.swift in Sources */,
