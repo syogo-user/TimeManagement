@@ -244,6 +244,7 @@
 				3DF81CAF2B9C48BE00C722C5 /* Sources */,
 				3DF81CB02B9C48BE00C722C5 /* Frameworks */,
 				3DF81CB12B9C48BE00C722C5 /* Resources */,
+				3D512F1C2BA6ABBA008587E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -311,6 +312,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D512F1C2BA6ABBA008587E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/generated/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which rswift >/dev/null; then\nrswift generate \"$SRCROOT/generated/R.generated.swift\"\nelse\necho \"warning: rswift not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DF81CAF2B9C48BE00C722C5 /* Sources */ = {
