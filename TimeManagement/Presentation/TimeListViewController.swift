@@ -10,9 +10,11 @@ import UIKit
 class TimeListViewController: BaseViewController {
     private var viewModel: TimeListViewModel = TimeListViewModelImpl()
     private var tableViewItems: [TimeInfoItem] = []
-    private let cellId = "cellId"
     private let refreshCtl = UIRefreshControl()
+    private let cellId = "cellId"
+    
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var emptyMessageLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,11 +43,20 @@ class TimeListViewController: BaseViewController {
         refreshCtl.endRefreshing()
     }
     
+    private func setupEmptyMessage() {
+        if tableViewItems.isEmpty {
+            emptyMessageLabel.isHidden = false
+        } else {
+            emptyMessageLabel.isHidden = true
+        }
+    }
+    
     private func loadTimeList() {
         do {
             let items = try viewModel.loadTimeList()
             tableViewItems = items.reversed()
             tableView.reloadData()
+            setupEmptyMessage()
         } catch {
             showLoadErrorDialog()
         }

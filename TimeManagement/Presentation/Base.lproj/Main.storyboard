@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gvH-RA-vql">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Y8c-9W-rUu">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxP-aI-dQh">
@@ -38,25 +38,36 @@
                                     <action selector="registerTimeInfo:" destination="ov4-DN-i22" eventType="touchUpInside" id="ITj-wN-5zu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzI-gs-IDH">
+                                <rect key="frame" x="75.333333333333329" y="305.66666666666669" width="242.66666666666669" height="40.666666666666686"/>
+                                <string key="text">データがありません。
+データの登録をお願いします。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vig-ND-bhg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Y8c-9W-rUu" firstAttribute="top" secondItem="Vig-ND-bhg" secondAttribute="top" id="0mI-2C-8Rg"/>
+                            <constraint firstAttribute="bottom" secondItem="Y8c-9W-rUu" secondAttribute="bottom" id="2f7-KK-1ql"/>
+                            <constraint firstItem="hzI-gs-IDH" firstAttribute="centerX" secondItem="e2N-zH-7I4" secondAttribute="centerX" id="40D-Ji-Y1o"/>
+                            <constraint firstItem="hzI-gs-IDH" firstAttribute="centerY" secondItem="e2N-zH-7I4" secondAttribute="centerY" constant="-100" id="785-Bc-Jse"/>
                             <constraint firstItem="Vig-ND-bhg" firstAttribute="trailing" secondItem="KxP-aI-dQh" secondAttribute="trailing" constant="42" id="9gl-J2-SFd"/>
-                            <constraint firstItem="Vig-ND-bhg" firstAttribute="bottom" secondItem="gvH-RA-vql" secondAttribute="bottom" id="AAx-hr-DZ5"/>
+                            <constraint firstItem="Y8c-9W-rUu" firstAttribute="leading" secondItem="Vig-ND-bhg" secondAttribute="leading" id="Ch4-X1-DXQ"/>
+                            <constraint firstItem="Vig-ND-bhg" firstAttribute="trailing" secondItem="Y8c-9W-rUu" secondAttribute="trailing" id="SlP-De-OdQ"/>
                             <constraint firstItem="Vig-ND-bhg" firstAttribute="bottom" secondItem="KxP-aI-dQh" secondAttribute="bottom" constant="40" id="ZhI-d7-zcA"/>
-                            <constraint firstItem="gvH-RA-vql" firstAttribute="top" secondItem="Vig-ND-bhg" secondAttribute="top" id="gEX-4E-KTf"/>
-                            <constraint firstItem="Vig-ND-bhg" firstAttribute="trailing" secondItem="gvH-RA-vql" secondAttribute="trailing" id="sJf-Ir-jK5"/>
-                            <constraint firstItem="gvH-RA-vql" firstAttribute="leading" secondItem="Vig-ND-bhg" secondAttribute="leading" id="yCf-2W-6n1"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="gvH-RA-vql" id="luT-Kl-Fqx"/>
+                        <outlet property="emptyMessageLabel" destination="hzI-gs-IDH" id="Pls-Fl-Hkb"/>
+                        <outlet property="tableView" destination="Y8c-9W-rUu" id="wqq-Nd-UoN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLG-M6-JEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-695" y="-2"/>
+            <point key="canvasLocation" x="-695.41984732824426" y="-2.1126760563380285"/>
         </scene>
         <!--Input Time View Controller-->
         <scene sceneID="tne-QT-ifu">
