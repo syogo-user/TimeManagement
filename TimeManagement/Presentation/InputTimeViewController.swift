@@ -21,7 +21,6 @@ class InputTimeViewController: BaseViewController {
     }
 
     @IBAction private func judgement(_ sender: Any) {
-        // あとでバリデーションする
         guard let timeValue = validation() else { return }
         let contains = viewModel.containsTime(startTime: timeValue.0, endTime: timeValue.1, taretTime: timeValue.2)
         showContainsResultDialog(contains: contains)
@@ -43,23 +42,51 @@ class InputTimeViewController: BaseViewController {
     }
     
     private func validation() -> (Int, Int, Int)? {
-        guard let startTime = startTimeTextField.text,
-              let endTime = endTimeTextField.text,
-              let targetTime = targetTimeTextField.text
+        guard let startTimeText = startTimeTextField.text,
+              let endTimeText = endTimeTextField.text,
+              let targetTimeText = targetTimeTextField.text
         else { return nil }
-
-        guard let startTime = Int(startTime),
-              let endTime = Int(endTime),
-              let targetTime = Int(targetTime)
+        
+        let startTime = Int(startTimeText)
+        let endTime = Int(endTimeText)
+        let targetTime = Int(targetTimeText)
+        let timeItems: [(String, Int?)] = [("開始時刻", startTime), ("終了時刻", endTime), ("とある時刻", targetTime)]
+        
+        var invalidValue: String = ""
+        timeItems.forEach { (key: String, time: Int?) in
+            if let time = time {
+                if invalidTime(time: time) {
+                    invalidValue += key
+                }
+            } else {
+                invalidValue += key
+            }
+        }
+        
+        if invalidValue != "" {
+            showValidationResultDialog(invalidValue: invalidValue)
+        }
+        
+        guard let startTime = startTime,
+              let endTime = endTime,
+              let targetTime = targetTime
         else { return nil }
             
         return (startTime, endTime, targetTime)
     }
+    
+    private func invalidTime(time: Int) -> Bool {
+        if 0 <= time && time <= 23 {
+            return false
+        } else {
+            return true
+        }
+    }
 
-    private func showValidationResultDialog(inputTitle: String) {
+    private func showValidationResultDialog(invalidValue: String) {
         showDialog(
             title: R.string.localizable.inputErrorTitle(),
-            message: R.string.localizable.inputErrorMessage(inputTitle, inputTitle),
+            message: R.string.localizable.inputErrorMessage(invalidValue, invalidValue),
             buttonTitle: R.string.localizable.ok()
         )
     }
