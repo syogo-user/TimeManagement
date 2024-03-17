@@ -66,6 +66,7 @@ class InputTimeViewController: BaseViewController {
         if !invalidItems.isEmpty {
             let invalidValue = invalidItems.joined(separator: ",")
             showValidationResultDialog(invalidValue: invalidValue)
+            return nil
         }
         
         guard let startTime = startTime,
