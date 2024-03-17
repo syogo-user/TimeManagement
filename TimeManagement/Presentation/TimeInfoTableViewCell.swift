@@ -19,9 +19,9 @@ class TimeInfoTableViewCell: UITableViewCell {
     }
     
     func setLayout(timeInfo: TimeInfoItem){
-        self.startTimeLabel.text = R.string.localizable.startTime(timeInfo.startTime.description)
-        self.endTimeLabel.text = R.string.localizable.endTime(timeInfo.endTime.description)
-        self.targetTimeLabel.text = R.string.localizable.targetTime(timeInfo.targetTime.description)
+        self.startTimeLabel.text = R.string.localizable.startTimeText(timeInfo.startTime.description)
+        self.endTimeLabel.text = R.string.localizable.endTimeText(timeInfo.endTime.description)
+        self.targetTimeLabel.text = R.string.localizable.targetTimeText(timeInfo.targetTime.description)
         self.containsLabel.text =  timeInfo.containsTime ? R.string.localizable.includeStateContain() : R.string.localizable.includeStateNotContain()
     }
 }
