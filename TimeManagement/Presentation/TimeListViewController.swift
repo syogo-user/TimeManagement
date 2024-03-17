@@ -7,17 +7,17 @@
 
 import UIKit
 
-class TimeListViewController: UIViewController {
+class TimeListViewController: BaseViewController {
     private var viewModel: TimeListViewModel = TimeListViewModelImpl()
     private var tableViewItems: [TimeInfoItem] = []
-    private let cellId = "cell"
+    private let cellId = "cellId"
     @IBOutlet private weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        let nib = UINib(nibName: "TimeInfoTableViewCell", bundle: nil)
+        let nib = UINib(nibName: R.nib.timeInfoTableViewCell.name, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: cellId)
     }
     
@@ -26,10 +26,10 @@ class TimeListViewController: UIViewController {
         
         do {
             let items = try viewModel.loadTimeList()
-            tableViewItems = items
+            tableViewItems = items.reversed()
             tableView.reloadData()
         } catch {
-            // あとで追加 エラーメッセージ表示
+            showLoadErrorDialog()
         }
     }
     
@@ -37,6 +37,14 @@ class TimeListViewController: UIViewController {
         guard let vc = R.storyboard.main.inputTimeVC() else { return }
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
+    }
+    
+    private func showLoadErrorDialog() {
+        showDialog(
+            title: R.string.localizable.loadErrorTitle(),
+            message: R.string.localizable.loadErrorMessage(),
+            buttonTitle: R.string.localizable.ok()
+        )
     }
 }
 
