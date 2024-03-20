@@ -26,9 +26,8 @@ final class MainDatabase {
 
     func dbQueue() throws -> DatabaseQueue {
         guard let dbQueue = _dbQueue else {
-            throw DatabaseError.accessFailed(reason: "DBエラー")
+            throw DatabaseError.accessFailed
         }
-        print("dbQueue(): \(dbQueue.path)")
         return dbQueue
     }
 

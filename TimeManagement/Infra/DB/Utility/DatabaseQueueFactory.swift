@@ -9,7 +9,7 @@ import Foundation
 import GRDB
 
 enum DatabaseQueueFactory {
-
+    /// DatabaseQueueを作成
     static func create(definition: DatabaseDefinition) throws -> DatabaseQueue {
         do {
             let databasePath = try generateDatabasePath(dbFileName: definition.dbFileName)

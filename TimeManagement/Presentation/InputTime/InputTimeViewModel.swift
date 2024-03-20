@@ -8,9 +8,9 @@
 import Foundation
 
 protocol InputTimeViewModel {
-    
+    /// 時刻情報の保存
     func saveTime(startTime: Int, endTime: Int, targetTime: Int) throws
-    
+    /// とある時刻が範囲内に含まれるかを判定する
     func containsTime(startTime: Int, endTime: Int, taretTime: Int) -> Bool
 }
 

@@ -8,10 +8,9 @@
 import Foundation
 
 protocol TimeInfoDao {
-    /// 時間情報を保存
-    func saveLocalTime(timeInfo: TimeInfoRecord) throws
-    
-    /// 時間情報を取得
+    /// 時刻情報を保存
+    func saveLocalTime(timeInfo: TimeInfoRecord) throws    
+    /// 時刻情報を取得
     func loadTimeInfo() -> [TimeInfoRecord]
 }
 

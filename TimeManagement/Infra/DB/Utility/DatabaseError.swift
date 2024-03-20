@@ -11,5 +11,5 @@ enum DatabaseError: Error {
     /// DBオープン失敗
     case openFailed(Error)
     /// DBアクセス失敗
-    case accessFailed(reason: String)
+    case accessFailed
 }

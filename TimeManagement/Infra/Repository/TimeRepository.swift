@@ -8,9 +8,9 @@
 import Foundation
 
 protocol TimeRepository {
-    
+    /// 時刻情報を保存
     func saveTime(timeInfo: TimeInfoRecord) throws
-    
+    /// 時刻情報を取得
     func loadTimeInfo() throws -> [TimeInfoRecord]
 }
 

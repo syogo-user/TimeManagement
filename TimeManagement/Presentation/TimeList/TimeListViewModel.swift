@@ -8,7 +8,7 @@
 import Foundation
 
 protocol TimeListViewModel {
-    // 一覧を取得する
+    /// 時刻情報のリストを取得する
     func loadTimeList() throws -> [TimeInfoItem]
 }
 
