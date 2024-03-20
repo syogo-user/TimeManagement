@@ -21,6 +21,7 @@
 "startTimeText" = "開始時刻: %@時";
 "endTimeText" = "終了時刻: %@時";
 "targetTimeText" = "とある時刻: %@時";
+"timeListTitle" = "時刻情報一覧";
 
 // MARK: value
 "startTime" = "開始時刻";
