@@ -8,7 +8,6 @@
 import UIKit
 
 class TimeInfoTableViewCell: UITableViewCell {
-
     @IBOutlet private weak var startTimeLabel: UILabel!
     @IBOutlet private weak var endTimeLabel: UILabel!
     @IBOutlet private weak var targetTimeLabel: UILabel!

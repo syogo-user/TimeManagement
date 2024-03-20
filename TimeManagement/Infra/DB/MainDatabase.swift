@@ -5,7 +5,6 @@
 //  Created by 小野寺祥吾 on 2024/03/10.
 //
 
-import Foundation
 import GRDB
 
 final class MainDatabase {
@@ -26,9 +25,8 @@ final class MainDatabase {
 
     func dbQueue() throws -> DatabaseQueue {
         guard let dbQueue = _dbQueue else {
-            throw DatabaseError.accessFailed(reason: "DBエラー")
+            throw DatabaseError.accessFailed
         }
-        print("dbQueue(): \(dbQueue.path)")
         return dbQueue
     }
 

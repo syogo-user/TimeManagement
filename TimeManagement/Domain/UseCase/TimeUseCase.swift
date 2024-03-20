@@ -5,8 +5,6 @@
 //  Created by 小野寺祥吾 on 2024/03/10.
 //
 
-import Foundation
-
 protocol TimeUseCase {
     /// とある時刻が範囲内に含まれるかを判定する
     func containsTime(startTime: Int, endTime: Int, targetTime: Int) -> Bool

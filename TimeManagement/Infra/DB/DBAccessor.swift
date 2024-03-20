@@ -5,16 +5,14 @@
 //  Created by 小野寺祥吾 on 2024/03/10.
 //
 
-import Foundation
 import GRDB
 
 protocol DBAccessor {
-    /// 時間情報
+    /// 時刻情報
     var timeInfoDao: TimeInfoDao { get }
 }
 
 class GRDBAccessor {
-    
     func readFromDBwith<T>(_ operation: @escaping ((GRDB.Database) throws -> (T))) throws -> T {
         try MainDatabase.shared.dbQueueSingle().read { db in
            try operation(db)

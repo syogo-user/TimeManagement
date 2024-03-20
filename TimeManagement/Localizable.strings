@@ -5,22 +5,24 @@
 //  Created by 小野寺祥吾 on 2024/03/16.
 //
 
+// MARK: Dialog
 "saveErrorTitle" = "保存失敗";
 "saveErrorMessage" = "保存に失敗しました。\n再度お試しください。";
 "inputErrorTitle" = "入力不正";
 "inputErrorMessage" = "%@の値が不正です。\n%@の値は0から23で入力してください。";
 "loadErrorTitle" = "読込失敗";
 "loadErrorMessage" = "データの読み込みに失敗しました。\n一覧をスワイプして更新してください。";
-
 "containsResultTitle" = "判定結果";
 "ok" = "OK";
 
-
+// MARK: Label
 "includeStateContain" = "含む";
 "includeStateNotContain" = "含まない";
 "startTimeText" = "開始時刻: %@時";
 "endTimeText" = "終了時刻: %@時";
 "targetTimeText" = "とある時刻: %@時";
+
+// MARK: value
 "startTime" = "開始時刻";
 "endTime" = "終了時刻";
 "targetTime" = "とある時刻";
