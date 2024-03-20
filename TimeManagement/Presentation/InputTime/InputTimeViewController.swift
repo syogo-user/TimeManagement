@@ -16,7 +16,7 @@ class InputTimeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        startTimeTextField.becomeFirstResponder()
     }
 
     @IBAction private func judgement(_ sender: Any) {
