@@ -183,6 +183,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時刻情報登録" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUJ-Ca-4kH">
+                                <rect key="frame" x="144.66666666666666" y="79" width="104" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vjE-b1-bro"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -190,6 +196,8 @@
                             <constraint firstItem="0NG-Qd-Ibo" firstAttribute="top" secondItem="6uQ-WK-ga0" secondAttribute="top" id="3XP-sa-F7z"/>
                             <constraint firstItem="0NG-Qd-Ibo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6uQ-WK-ga0" secondAttribute="trailing" constant="16" id="56l-v3-Gjx"/>
                             <constraint firstItem="5O8-xU-d2j" firstAttribute="leading" secondItem="vjE-b1-bro" secondAttribute="leading" constant="24" id="5EI-90-i4A"/>
+                            <constraint firstItem="pUJ-Ca-4kH" firstAttribute="centerX" secondItem="eaX-Gj-W0y" secondAttribute="centerX" id="D5N-F5-CIn"/>
+                            <constraint firstItem="pUJ-Ca-4kH" firstAttribute="centerY" secondItem="XJY-XA-f23" secondAttribute="centerY" id="KHs-7b-dht"/>
                             <constraint firstItem="vjE-b1-bro" firstAttribute="trailing" secondItem="0NG-Qd-Ibo" secondAttribute="trailing" constant="60" id="Kus-gh-Jlz"/>
                             <constraint firstItem="XJY-XA-f23" firstAttribute="top" secondItem="vjE-b1-bro" secondAttribute="top" constant="8" id="VK9-mt-o78"/>
                             <constraint firstItem="6uQ-WK-ga0" firstAttribute="top" secondItem="5O8-xU-d2j" secondAttribute="bottom" constant="32" id="cA8-hN-kSw"/>
