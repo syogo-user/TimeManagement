@@ -24,6 +24,7 @@ class TimeListViewController: BaseViewController {
         refreshCtl.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
         let nib = UINib(nibName: R.nib.timeInfoTableViewCell.name, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: cellId)
+        tableView.tableFooterView = UIView() 
     }
     
     override func viewWillAppear(_ animated: Bool) {
