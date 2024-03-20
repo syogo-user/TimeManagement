@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ov4-DN-i22">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P07-d0-EWT">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -18,22 +18,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Y8c-9W-rUu">
-                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxP-aI-dQh">
-                                <rect key="frame" x="271" y="733" width="80" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxP-aI-dQh">
+                                <rect key="frame" x="261" y="733" width="100" height="45"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Xt7-hg-AMh"/>
-                                    <constraint firstAttribute="width" constant="80" id="e9D-5w-z6C"/>
+                                    <constraint firstAttribute="width" constant="100" id="e9D-5w-z6C"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="登録">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="登録">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="registerTimeInfo:" destination="ov4-DN-i22" eventType="touchUpInside" id="ITj-wN-5zu"/>
                                 </connections>
@@ -54,12 +58,13 @@
                             <constraint firstAttribute="bottom" secondItem="Y8c-9W-rUu" secondAttribute="bottom" id="2f7-KK-1ql"/>
                             <constraint firstItem="hzI-gs-IDH" firstAttribute="centerX" secondItem="e2N-zH-7I4" secondAttribute="centerX" id="40D-Ji-Y1o"/>
                             <constraint firstItem="hzI-gs-IDH" firstAttribute="centerY" secondItem="e2N-zH-7I4" secondAttribute="centerY" constant="-100" id="785-Bc-Jse"/>
-                            <constraint firstItem="Vig-ND-bhg" firstAttribute="trailing" secondItem="KxP-aI-dQh" secondAttribute="trailing" constant="42" id="9gl-J2-SFd"/>
+                            <constraint firstItem="Vig-ND-bhg" firstAttribute="trailing" secondItem="KxP-aI-dQh" secondAttribute="trailing" constant="32" id="9gl-J2-SFd"/>
                             <constraint firstItem="Y8c-9W-rUu" firstAttribute="leading" secondItem="Vig-ND-bhg" secondAttribute="leading" id="Ch4-X1-DXQ"/>
                             <constraint firstItem="Vig-ND-bhg" firstAttribute="trailing" secondItem="Y8c-9W-rUu" secondAttribute="trailing" id="SlP-De-OdQ"/>
                             <constraint firstItem="Vig-ND-bhg" firstAttribute="bottom" secondItem="KxP-aI-dQh" secondAttribute="bottom" constant="40" id="ZhI-d7-zcA"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="txw-Qh-XlB"/>
                     <connections>
                         <outlet property="emptyMessageLabel" destination="hzI-gs-IDH" id="Pls-Fl-Hkb"/>
                         <outlet property="tableView" destination="Y8c-9W-rUu" id="wqq-Nd-UoN"/>
@@ -67,7 +72,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLG-M6-JEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-520" y="20"/>
+            <point key="canvasLocation" x="405.34351145038164" y="19.718309859154932"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1cR-rN-aMb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P07-d0-EWT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="naQ-kI-IOf">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ov4-DN-i22" kind="relationship" relationship="rootViewController" id="1ki-H1-0hc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qxl-qe-QIa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-521.37404580152668" y="19.718309859154932"/>
         </scene>
     </scenes>
     <resources>

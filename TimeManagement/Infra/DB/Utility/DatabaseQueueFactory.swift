@@ -5,11 +5,10 @@
 //  Created by 小野寺祥吾 on 2024/03/10.
 //
 
-import Foundation
 import GRDB
 
 enum DatabaseQueueFactory {
-
+    /// DatabaseQueueを作成
     static func create(definition: DatabaseDefinition) throws -> DatabaseQueue {
         do {
             let databasePath = try generateDatabasePath(dbFileName: definition.dbFileName)

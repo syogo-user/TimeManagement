@@ -8,7 +8,6 @@
 import UIKit
 
 class InputTimeViewController: BaseViewController {
-
     @IBOutlet private weak var startTimeTextField: UITextField!
     @IBOutlet private weak var endTimeTextField: UITextField!
     @IBOutlet private weak var targetTimeTextField: UITextField!
@@ -17,7 +16,7 @@ class InputTimeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        startTimeTextField.becomeFirstResponder()
     }
 
     @IBAction private func judgement(_ sender: Any) {

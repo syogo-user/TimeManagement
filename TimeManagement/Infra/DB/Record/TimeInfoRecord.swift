@@ -5,7 +5,6 @@
 //  Created by 小野寺祥吾 on 2024/03/10.
 //
 
-import Foundation
 import GRDB
 
 class TimeInfoRecord : Record {
