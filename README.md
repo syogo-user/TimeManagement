@@ -1,9 +1,9 @@
 # TimeManagement
 ## 開発環境
-- Mac OS Ventura 13.6.2 
-- Xcode 15.0.1
-- Swift 5.8.1 
-- CocoaPods 1.14.3
+- macOS Monterey 12.6.2
+- Xcode 14.2
+- Swift 5.7.2
+- CocoaPods 1.12.0
 
 ## ブランチについて
 - mainブランチをご参照ください。
