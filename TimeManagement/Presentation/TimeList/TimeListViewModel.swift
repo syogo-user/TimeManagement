@@ -5,8 +5,6 @@
 //  Created by 小野寺祥吾 on 2024/03/09.
 //
 
-import Foundation
-
 protocol TimeListViewModel {
     /// 時刻情報のリストを取得する
     func loadTimeList() throws -> [TimeInfoItem]

@@ -5,8 +5,6 @@
 //  Created by 小野寺祥吾 on 2024/03/10.
 //
 
-import Foundation
-
 protocol TimeLocalStore {
     /// 時刻情報を保存
     func saveLocalTime(timeInfo: TimeInfoRecord) throws    

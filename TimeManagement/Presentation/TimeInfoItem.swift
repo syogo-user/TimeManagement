@@ -5,8 +5,6 @@
 //  Created by 小野寺祥吾 on 2024/03/10.
 //
 
-import Foundation
-
 class TimeInfoItem {
     /// 開始時刻
     let startTime: Int
